@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/room.css">
+    <script>
+        const ROOM_ID = "<%= roomId %>";
+    </script>
+    <script defer src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="video-field">
+        <div id="own-video">
+            <div class="overlay-text">Should be a video here</div>
+        </div>
+        <div id="stranger-video">
+            <div class="overlay-text">Should be a video here</div>
+        </div>
+    </div>
+    <div class="msg-box">
+        <div id="msg-field">
+        </div>
+        <div class="input-field">
+            <input type="text" id="msg-input">
+            <button type="button" class="msg-submit" onclick="send_text()">Send</button>
+        </div>
+    </div>
+    <div class="options">
+        <a href="/" class="button">
+            <div class="button-field">End Call</div>
+        </a>
+    </div>
+</body>
+</html>

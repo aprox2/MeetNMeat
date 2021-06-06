@@ -1,0 +1,64 @@
+body, html{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.title{
+    color: #ff5c0f;
+    text-align: center;
+    font-size: 64px;
+    font-weight: bolder;
+    width: 100%;
+    height: 20%;
+}
+p{margin: 0}
+.desc{
+    font-family: Arial;
+    text-align: center;
+    font-size: 28px;
+    width: 100%;
+    height: 40%;
+}
+.search-options{
+    display: flex;
+    justify-content: center;
+    height: 35%;
+}
+.terms-service{
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    height: 5%;
+}
+.join-btn, .disc-btn{
+    border: 0;
+    font-weight: bolder;
+    color: white;
+    margin: 8px;
+    height: 40%;
+    width: 15%;
+    transition: .3s ease background-color;
+    border-radius: 16px;
+    font-size: 24px;
+}
+.join-btn{
+    background-color: #6fd9ec;
+}
+.disc-btn{
+    background-color: #ecc16f;
+}
+.join-btn:hover{
+    background-color: #6f9bec;
+}
+.disc-btn:hover{
+    background-color: #e3a42b;
+}
+.join-btn:active{
+    background-color: #040d1d;
+}
+.disc-btn:active{
+    background-color: #533a0b;
+}
+#checkbox-terms{
+    transition: .3s ease color;
+}
